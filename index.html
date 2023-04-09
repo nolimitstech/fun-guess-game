@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="sass.css" />
+  <title>Game</title>
+</head>
+
+<body>
+  <div class="section1">
+    <div class="title">
+      <h1 class="title__h1">Guess Game!</h1>
+
+      <p class="title__p">Enter your name to play😊</p>
+      <p class="title__p2">🟣N/B : Only alphabets!</p>
+    </div>
+    <div class="entry">
+      <input class="entry__name" type="text" name="Name" placeholder="Name"
+        oninput="this.value = this.value.replace(/[^A-Za-z]+$/, '')" />
+      <input class="entry__submit" type="submit" value="Start" />
+    </div>
+  </div>
+  <!-- oninput="this.value = this.value.replace(/[^0-9]/g, '')" -->
+
+  <div class="section2">
+    <div class="welcome">
+      <div class="welcome__h1"></div>
+      <div class="welcome__p">
+        <p>SECRET NUMBER is between 1 and 20</p>
+        <p>
+          Guess the SECRET NUMBER accurately, 5 times within 90sec to WIN!
+        </p>
+        <!-- <p>Ready?? PLAY!</p> -->
+      </div>
+      <div class="welcome__btns">
+        <button class="right__btnpause">Pause</button>
+        <button class="right__btnplay">PLAY!</button>
+        <button class="right__btnAgain">New Game</button>
+      </div>
+    </div>
+
+    <div class="flex">
+      <div class="left">
+        <div class="boxes">
+          <div class="timer">00:00</div>
+          <div class="logger">0</div>
+        </div>
+        <div class="left__main">
+          <button class="left__btnContinue">CONTINUE!</button>
+          <input type="number" class="left__guess" placeholder="Start Guessing..." />
+          <button class="left__btncheck">Check!</button>
+        </div>
+      </div>
+      <div class="right">
+        <div class="status">
+          <div class="status-msg"></div>
+        </div>
+        <div class="right__secret">
+          <div class="right__secretbox">
+            <p class="right__secretnum">???</p>
+          </div>
+        </div>
+        <!-- <button class="right__btnplay">PLAY</button> -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

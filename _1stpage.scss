@@ -1,0 +1,175 @@
+.section1 {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(to bottom,
+      rgba(160, 91, 1, 0.986),
+      rgba(194, 111, 2, 0.986),
+      rgba(209, 119, 1, 0.938),
+      rgba(160, 91, 1, 0.986),
+      rgba(1, 93, 129, 0.336)),
+    url(/img/guess.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media screen and (min-width: 320px) and (max-width: 550px) {
+    padding: 1rem;
+  }
+}
+
+.title {
+  // display: flex;
+  // flex-direction: column;
+  // align-content: center;
+  // justify-content: center;
+  // background: linear-gradient(
+  //   to bottom,
+  //   rgba(207, 159, 3, 0.911),
+  //   rgba(207, 159, 3, 0.856),
+  //   rgba(207, 159, 3, 0.014)
+  // );
+  font-size: 4rem;
+  font-weight: bolder;
+  color: rgba(41, 2, 49, 0.986);
+  text-align: center;
+
+
+  @media screen and (min-width: 351px) and (max-width: 550px) {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  @media screen and (min-width: 300px) and (max-width: 350px) {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  &__h1 {
+    padding-top: 10%;
+
+    @media screen and (min-width: 351px) and (max-width: 550px) {
+      padding-top: 15%;
+    }
+
+    @media screen and (min-width: 300px) and (max-width: 350px) {
+      padding-top: 30%;
+    }
+  }
+
+  &__p {
+    color: rgb(163, 4, 4);
+
+    @media screen and (min-width: 351px) and (max-width: 550px) {
+      // font-size: 2.5rem;
+      font-weight: bold;
+    }
+
+    @media screen and (min-width: 300px) and (max-width: 350px) {
+      //  font-size: 2.5rem;
+      font-weight: bold;
+    }
+  }
+
+  &__p2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgba(41, 2, 49, 0.986);
+
+    @media screen and (min-width: 320px) and (max-width: 550px) {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.entry {
+  margin-top: 3rem;
+  text-align: center;
+
+  @media screen and (min-width: 351px) and (max-width: 550px) {
+    margin-top: 2rem;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 550px) {
+    margin-top: 1.8rem;
+  }
+
+  &__name {
+    font-size: 2.4rem;
+    background-color: rgb(221, 202, 220);
+    color: rgba(41, 2, 49, 0.986);
+    height: auto;
+    padding: 1.7rem;
+    width: 20%;
+    text-decoration: none;
+    letter-spacing: .2rem;
+    border-radius: .8rem;
+    margin-right: 2rem;
+    outline: none;
+
+    @media screen and (min-width: 551px) and (max-width: 900px) {
+      font-size: 2rem;
+      padding: 1.5rem;
+      letter-spacing: .09rem;
+      border-radius: .7rem;
+      margin-right: 1.6rem;
+      width: 30%;
+    }
+
+    @media screen and (min-width: 351px) and (max-width: 550px) {
+      font-size: 1.8rem;
+      padding: 1.4rem;
+      letter-spacing: 0rem;
+      border-radius: .6rem;
+      margin-right: 1rem;
+      width: 40%;
+    }
+
+    @media screen and (min-width: 300px) and (max-width: 350px) {
+      font-size: 1.5rem;
+      padding: 1rem;
+      letter-spacing: 0rem;
+      border-radius: .6rem;
+      margin-right: .8rem;
+      width: 50%;
+    }
+  }
+
+  &__submit {
+    //width: ;
+    height: auto;
+    font-size: 2.4rem;
+    font-weight: bold;
+    padding: 1.7rem;
+    background-color: rgba(41, 2, 49, 0.986);
+    color: rgb(221, 202, 220);
+    letter-spacing: .5rem;
+    border-radius: .8rem;
+    outline: none;
+
+    @media screen and (min-width: 551px) and (max-width: 900px) {
+      font-size: 2.1rem;
+      padding: 1.5rem;
+      letter-spacing: .3rem;
+      border-radius: .7rem;
+
+    }
+
+    @media screen and (min-width: 351px) and (max-width: 550px) {
+      font-size: 1.8rem;
+      font-weight: 700;
+      padding: 1.4rem;
+      letter-spacing: .2rem;
+      border-radius: .6rem;
+      //width: 40%;
+    }
+
+    @media screen and (min-width: 300px) and (max-width: 350px) {
+      font-size: 1.5rem;
+      padding: 1rem;
+      letter-spacing: 0rem;
+      border-radius: .6rem;
+      margin-right: .8rem;
+      //width: 50%;
+    }
+  }
+}
